@@ -12,7 +12,7 @@ services:
       POSTGRES_DB: kong
       POSTGRES_PASSWORD: kongpass
     ports:
-      - "5433:5433" # Cambiado a 5433 para evitar conflictos locales
+      - "5432:5432" # Cambiado a 5433 para evitar conflictos locales
     volumes:
       - kong_data:/var/lib/postgresql/data
 
